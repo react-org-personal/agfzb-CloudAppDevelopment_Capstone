@@ -29,7 +29,7 @@ APPEND_SLASH = True
 
 ALLOWED_HOSTS = [
     "localhost",
-    "swarnavobestcars.au-syd.mybluemix.net"
+    "swarnavobestcars.au-syd.mybluemix.net",
     ]
 
 

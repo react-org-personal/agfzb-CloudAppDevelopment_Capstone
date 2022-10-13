@@ -1,10 +1,10 @@
   applications:
-  - name: bestcars
+  - name: best_cars
     routes:
       - route: swarnavobestcars.au-syd.mybluemix.net
     memory: 128M
     buildpack: python_buildpack
-  - name: djangoapp-bestcars
+  - name: djangoapp-best_cars
     routes:
       - route: swarnavobestcars.au-syd.mybluemix.net/static
     memory: 128M
