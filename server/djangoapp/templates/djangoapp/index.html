@@ -15,7 +15,7 @@
 
     <body>
     <!-- Remove this line the first time you edit this file -->
-     This is the index page of your Django app!
+
     <!--Add a nav bar here -->
     <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
@@ -32,13 +32,13 @@
                 </li>
                 {% else %}
                 <li>
-                    <form class="form-inline" action="{%url 'djangoapp:login'%}" method="post">
+                    <form class="form-inline  my-2 my-lg-0" action="{%url 'djangoapp:login'%}" method="post">
                         {% csrf_token %}
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Username" name="username" >
-                            <input type="password" class="form-control" placeholder="Password" name="psw" >
-                            <button class="btn btn-primary" type="submit">Login</button>
-                            <a class="btn btn-link" href="{%url 'djangoapp:registration'%}">Sign Up</a>
+                        <div class="form-group">
+                            <input  type="text" class="form-control mr-sm-2" placeholder="Username" name="username" >
+                            <input type="password" class="form-control mr-sm-2" placeholder="Password" name="psw" >
+                            <button class="btn btn-primary mr-sm-2" type="submit">Login</button>
+                            <a class="btn btn-link my-2 my-sm-0" href="{%url 'djangoapp:registration'%}">Sign Up</a>
                         </div>
                     </form>
                 </li>
